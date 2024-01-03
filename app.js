@@ -9,6 +9,7 @@ app.use(bodyParser.json());
 let rooms = [];
 let bookings = [];
 let customers = [];
+app.get('/', (req, res) => {res.send('Node-JS Hall Booking API')});
 
 //Creating a room
 app.post('/createroom',(req,res) => {
